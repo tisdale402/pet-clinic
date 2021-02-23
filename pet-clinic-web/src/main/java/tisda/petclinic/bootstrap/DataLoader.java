@@ -2,10 +2,8 @@ package tisda.petclinic.bootstrap;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
-import tisda.petclinc.services.OwnerService;
-import tisda.petclinc.services.VetService;
-import tisda.petclinc.services.map.OwnerServiceMap;
-import tisda.petclinc.services.map.VetServiceMap;
+import tisda.petclinic.services.OwnerService;
+import tisda.petclinic.services.VetService;
 import tisda.petclinic.model.Owner;
 import tisda.petclinic.model.Vet;
 
@@ -15,9 +13,9 @@ public class DataLoader implements CommandLineRunner {
     private final OwnerService ownerService;
     private final VetService vetService;
 
-    public DataLoader() {
-        ownerService = new OwnerServiceMap();
-        vetService = new VetServiceMap();
+    public DataLoader(OwnerService ownerService, VetService vetService) {
+        this.ownerService = ownerService;
+        this.vetService = vetService;
     }
 
     @Override

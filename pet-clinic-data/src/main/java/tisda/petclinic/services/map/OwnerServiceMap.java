@@ -1,10 +1,12 @@
-package tisda.petclinc.services.map;
+package tisda.petclinic.services.map;
 
-import tisda.petclinc.services.OwnerService;
+import org.springframework.stereotype.Service;
+import tisda.petclinic.services.OwnerService;
 import tisda.petclinic.model.Owner;
 
 import java.util.Set;
 
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService{
     @Override
     public Set<Owner> findAll() {

@@ -1,8 +1,6 @@
-package tisda.petclinc.services;
+package tisda.petclinic.services;
 
 import tisda.petclinic.model.Owner;
-
-import java.util.Set;
 
 public interface OwnerService extends CrudService<Owner, Long>{
 

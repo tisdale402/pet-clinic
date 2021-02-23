@@ -1,4 +1,4 @@
-package tisda.petclinc.services;
+package tisda.petclinic.services;
 
 import java.util.Set;
 

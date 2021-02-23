@@ -1,11 +1,12 @@
-package tisda.petclinc.services.map;
+package tisda.petclinic.services.map;
 
-import tisda.petclinc.services.CrudService;
-import tisda.petclinc.services.PetService;
+import org.springframework.stereotype.Service;
+import tisda.petclinic.services.PetService;
 import tisda.petclinic.model.Pet;
 
 import java.util.Set;
 
+@Service
 public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService{
     @Override
     public Set<Pet> findAll() {

@@ -1,4 +1,4 @@
-package tisda.petclinc.services.map;
+package tisda.petclinic.services.map;
 
 import java.util.HashMap;
 import java.util.HashSet;
